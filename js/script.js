@@ -52,7 +52,7 @@ createApp({
         },
         showSlide: function(clickedSlide) {
             this.slideAttiva = clickedSlide;
-
+            
         }
     }
   }).mount('#app');
