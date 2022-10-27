@@ -31,9 +31,15 @@ createApp({
             }
         ],
 
-        slideAttiva : 0
+        slideAttiva : 0,
 
       }
+    },
+    created() {
+        setInterval: (() => {
+            console.log(this.slides)
+            this.showNext();
+        },3000);
     },
     methods: {
         showNext: function() {
@@ -51,8 +57,8 @@ createApp({
             }
         },
         showSlide: function(clickedSlide) {
-            this.slideAttiva = clickedSlide;
-            
-        }
+            this.slideAttiva = clickedSlide; 
+        },
+    
     }
   }).mount('#app');
