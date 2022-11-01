@@ -35,12 +35,7 @@ createApp({
 
       }
     },
-    created() {
-        setInterval: (() => {
-            console.log(this.slides)
-            this.showNext();
-        },3000);
-    },
+
     methods: {
         showNext: function() {
             if (this.slideAttiva < this.slides.length - 1) {
